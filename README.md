@@ -65,7 +65,7 @@ Bug-Reporting-System/
 
 ⚙️ Installation
 1️⃣ Clone Repository
-git clone https://github.com/YourUsername/Bug-Reporting-System.git
+git clone https://github.com/anshurajput2305/Bug-reporting-and-Tracking-System.git
 cd Bug-Reporting-System
 
 2️⃣ Setup Backend
@@ -123,11 +123,11 @@ Watch Demo -->
 
 👥 Team Members
 
-Name 1 – Role (Backend)
+anshu rajput – Role (Backend/frontend/database)
 
-Name 2 – Role (Frontend)
+anubhav – Role (backend/frontend/database)
 
-Name 3 – Role (Database & Testing)
+
 
 📄 License
 
@@ -137,4 +137,4 @@ This project is for educational purposes only.
 
 anshu rajput – Frontend & UI Design (React/Angular/Vue)
 
-anubhav – Backend, Database & Deployment (Node/Django/Spring + SQL)
+anubhav – Backend, Database & Deployment (Node/Spring + SQL)
