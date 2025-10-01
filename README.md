@@ -90,9 +90,9 @@ Import bugtracker.sql into MySQL/PostgreSQL.
 
 Update DB config in backend/src/config/db.js.
 
-📸 Screenshots
+<!-- 📸 Screenshots
 
-(Add screenshots here, e.g., login page, bug reporting form, dashboard)
+(Add screenshots here, e.g., login page, bug reporting form, dashboard) -->
 
 Login Page
 
@@ -117,9 +117,9 @@ Postman Collection: tests/API_Testing.postman.json
 
 Unit Tests: inside tests/
 
-📽️ Demo Video (Optional)
+<!-- 📽️ Demo Video (Optional)
 
-Watch Demo
+Watch Demo -->
 
 👥 Team Members
 
@@ -133,18 +133,8 @@ Name 3 – Role (Database & Testing)
 
 This project is for educational purposes only.
 
-👉 Do you want me to also make a mini SQL schema file (bugtracker.sql) with users, bugs, and comments tables so you don’t waste time designing DB?
-
-You said:
-only 2 members
-ChatGPT said:
-
-Got it 👍 If your project has only 2 members, you can simply update the Team Members section in the README.md.
-
-Here’s the adjusted part for 2 people team 👇
-
 👥 Team Members
 
-Member 1 – Frontend & UI Design (React/Angular/Vue)
+anshu rajput – Frontend & UI Design (React/Angular/Vue)
 
-Member 2 – Backend, Database & Deployment (Node/Django/Spring + SQL)
+anubhav – Backend, Database & Deployment (Node/Django/Spring + SQL)
