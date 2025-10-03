@@ -3,22 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Resume Job Recommendation</title>
+  <title>AI Resume Job Matcher</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>AI Resume Job Recommendation</h1>
-    
-    <input type="file" id="resumeInput">
-    <button onclick="uploadResume()">Upload Resume</button>
-    
+    <h1>🚀 AI Resume Job Matcher</h1>
+    <p class="subtitle">Upload your resume and get the best job recommendations instantly.</p>
+
+    <div class="upload-box">
+      <input type="file" id="resumeInput">
+      <button onclick="uploadResume()">Upload Resume</button>
+    </div>
+
     <h2>Recommended Jobs</h2>
     <ul id="jobList">
-      <li>No results yet</li>
+      <li class="empty">No results yet</li>
     </ul>
   </div>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
