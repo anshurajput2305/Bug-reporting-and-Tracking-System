@@ -1,140 +1,109 @@
-# Bug-reporting-and-Tracking-System
-A web-based Bug Reporting and Tracking System that allows users to report bugs, while developers and managers can track, assign, and resolve them with analytics and dashboards for better collaboration.
+📌 AI Resume Job Recommendation System
+🚀 Project Overview
+This project is an AI-powered Resume Job Recommendation System that analyzes resumes, extracts key skills, and recommends the most relevant job roles. It also includes a chatbot assistant to provide insights such as missing skills and career suggestions.
 
-📌 Project Overview
+The system is divided into two parts:
 
-The Bug Reporting and Tracking System is a web-based platform that allows users (testers, developers, clients) to report software bugs, while project managers and developers can track, assign, and resolve them efficiently.
-It improves collaboration, ensures transparency, and speeds up software delivery.
+Backend: Python (FastAPI/Flask) with NLP/ML for resume parsing and job matching.
 
-🚀 Features
-👤 User (Tester/Client/Employee)
+Frontend: React.js for user interface (resume upload, job recommendations, chatbot).
 
-Register/Login
+⚙️ Features
+📄 Resume Upload: Upload PDF/DOCX resumes.
 
-Report bugs with title, description, severity, priority, and attachments
+🔍 Resume Parsing: Extract skills, education, and experience.
 
-Track bug status updates
+🤝 Job Matching: Compare extracted resume data with job dataset.
 
-Comment on issues
+📊 Job Recommendation: Display top matching jobs with a percentage match score.
 
-👨‍💼 Admin / Project Manager
-
-View and verify reported bugs
-
-Assign bugs to developers
-
-Change status (New → Open → In Progress → Resolved → Closed)
-
-Generate bug reports and statistics
-
-👨‍💻 Developer
-
-View assigned bugs
-
-Update progress and resolution notes
-
-Change bug status (In Progress → Resolved)
-
-📊 Analytics Dashboard
-
-Number of open/closed bugs
-
-Average resolution time
-
-Severity-based bug charts
-
-Module-wise bug distribution
+🤖 Chatbot Assistant: Answer user queries about job matches and skill gaps.
 
 🛠️ Tech Stack
-Layer	Technology Used
-Frontend	React.js / Angular / Vue.js
-Backend	Node.js (Express) / Python (Django/Flask) / Java (Spring Boot)
-Database	MySQL / PostgreSQL / MongoDB
-Auth	JWT / OAuth2
-File Upload	Local / Cloud (for screenshots)
-Charts	Chart.js / Recharts
+Frontend: React.js
+
+Backend: Python (FastAPI or Flask)
+
+NLP/AI: spaCy, HuggingFace Transformers, scikit-learn
+
+Database: PostgreSQL / MongoDB (for storing resumes & jobs)
+
+Other Tools: pdfminer, python-docx (for resume text extraction)
+
 📂 Project Structure
-Bug-Reporting-System/
-├── backend/         # Server-side code
-├── frontend/        # Client-side code
-├── docs/            # Documentation & reports
-├── presentation/    # PPT files
-├── tests/           # Postman / test cases
-├── README.md
-└── demo.mp4         # Optional demo video
+bash
+Copy code
+AI-Resume-Job-Recommender/
+│
+├── backend/
+│   ├── app.py                # Main backend entry (FastAPI/Flask)
+│   ├── resume_parser.py      # Resume text & skill extraction
+│   ├── job_matcher.py        # Job matching logic
+│   ├── models.py             # ML/NLP models
+│   ├── database.py           # DB connection
+│   ├── chatbot.py            # Chatbot logic
+│   ├── utils.py              # Helper functions
+│   ├── requirements.txt      # Python dependencies
+│   └── data/
+│       └── jobs.json         # Sample job dataset
+│
+├── frontend/
+│   ├── src/
+│   │   ├── App.js            # Main React app
+│   │   ├── components/
+│   │   │   ├── UploadResume.js
+│   │   │   ├── JobResults.js
+│   │   │   └── Chatbot.js
+│   │   └── services/api.js   # API calls to backend
+│   └── package.json          # React dependencies
+│
+└── README.md                 # Project documentation
+🔌 API Endpoints
+POST /uploadResume → Upload resume file and extract text.
 
-⚙️ Installation
-1️⃣ Clone Repository
-git clone https://github.com/anshurajput2305/Bug-reporting-and-Tracking-System.git
-cd Bug-Reporting-System
+GET /matchJobs → Return top matching jobs with score.
 
-2️⃣ Setup Backend
+POST /chatbot → Query chatbot with a question.
+
+🧑‍🤝‍🧑 Team Roles
+anubhav (Backend/Frontend & AI)
+
+anshu rajput (Backend/Frontend & UI)
+
+🛠️ Installation & Setup
+1️⃣ Backend
+bash
+Copy code
 cd backend
-npm install         # if Node.js
-npm start
-
-
-(or for Django)
-
 pip install -r requirements.txt
-python manage.py runserver
-
-3️⃣ Setup Frontend
+python app.py
+2️⃣ Frontend
+bash
+Copy code
 cd frontend
 npm install
 npm start
+Backend runs on http://localhost:5000
+Frontend runs on http://localhost:3000
 
-4️⃣ Database Setup
+📅 Timeline (Est. 7 Days)
+Day 1: Project setup (backend & frontend).
 
-Import bugtracker.sql into MySQL/PostgreSQL.
+Day 2: Resume parsing module.
 
-Update DB config in backend/src/config/db.js.
+Day 3: Job dataset & matching logic.
 
-<!-- 📸 Screenshots
+Day 4: API integration.
 
-(Add screenshots here, e.g., login page, bug reporting form, dashboard) -->
+Day 5: Chatbot implementation.
 
-Login Page
+Day 6: Testing & debugging.
 
+Day 7: GitHub integration & documentation.
 
-Bug Reporting Form
+✅ Future Enhancements
+🔹 Live job fetching via LinkedIn/Indeed APIs.
 
+🔹 Advanced career guidance using LLMs.
 
-Dashboard
-
-
-📊 Sample Analytics
-
-Open vs Closed Bugs
-
-Average Resolution Time
-
-Severity-based Distribution
-
-🧪 Testing
-
-Postman Collection: tests/API_Testing.postman.json
-
-Unit Tests: inside tests/
-
-<!-- 📽️ Demo Video (Optional)
-
-Watch Demo -->
-
-👥 Team Members
-
-anshu rajput – Role (Backend/frontend/database)
-
-anubhav – Role (backend/frontend/database)
-
-
-
-📄 License
-
-This project is for educational purposes only.
-
-👥 Team Members
-
-anshu rajput – Frontend & UI Design (React/Angular/Vue)
-
-anubhav – Backend, Database & Deployment (Node/Spring + SQL)
+🔹 Skill gap visualization dashboards.
