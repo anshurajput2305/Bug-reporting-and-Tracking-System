@@ -3,76 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bug Reporting & Tracking System</title>
+  <title>AI Resume Job Recommendation</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <h1>🐞 Bug Tracker</h1>
-    <ul>
-      <li><a href="#">Dashboard</a></li>
-      <li><a href="#">Report Bug</a></li>
-      <li><a href="#">Analytics</a></li>
-      <li><a href="#">Logout</a></li>
+  <div class="container">
+    <h1>AI Resume Job Recommendation</h1>
+    
+    <input type="file" id="resumeInput">
+    <button onclick="uploadResume()">Upload Resume</button>
+    
+    <h2>Recommended Jobs</h2>
+    <ul id="jobList">
+      <li>No results yet</li>
     </ul>
-  </nav>
-
-  <!-- Login Form -->
-  <section class="login-section">
-    <h2>Login</h2>
-    <form>
-      <input type="text" placeholder="Username" required>
-      <input type="password" placeholder="Password" required>
-      <button type="submit">Login</button>
-    </form>
-  </section>
-
-  <!-- Bug Report Form -->
-  <section class="bug-report">
-    <h2>Report a Bug</h2>
-    <form>
-      <input type="text" placeholder="Bug Title" required>
-      <textarea placeholder="Bug Description" required></textarea>
-      <select>
-        <option value="">Select Severity</option>
-        <option value="low">Low</option>
-        <option value="medium">Medium</option>
-        <option value="high">High</option>
-      </select>
-      <input type="file" />
-      <button type="submit">Submit Bug</button>
-    </form>
-  </section>
-
-  <!-- Bug Dashboard -->
-  <section class="dashboard">
-    <h2>Bug Dashboard</h2>
-    <table>
-      <tr>
-        <th>ID</th>
-        <th>Title</th>
-        <th>Severity</th>
-        <th>Status</th>
-        <th>Assigned To</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Login button not working</td>
-        <td>High</td>
-        <td>Open</td>
-        <td>Amit</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>UI misalignment</td>
-        <td>Low</td>
-        <td>In Progress</td>
-        <td>Sara</td>
-      </tr>
-    </table>
-  </section>
-
+  </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
