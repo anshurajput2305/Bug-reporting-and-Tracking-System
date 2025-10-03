@@ -32,7 +32,10 @@ Other Tools: pdfminer, python-docx (for resume text extraction)
 
 📂 Project Structure
 bash
+
+
 Copy code
+
 AI-Resume-Job-Recommender/
 │
 ├── backend/
@@ -58,6 +61,8 @@ AI-Resume-Job-Recommender/
 │   └── package.json          # React dependencies
 │
 └── README.md                 # Project documentation
+
+
 🔌 API Endpoints
 POST /uploadResume → Upload resume file and extract text.
 
